@@ -1,0 +1,1233 @@
+<script type="text/javascript">
+    var username = "BrilliantEagle";
+    var _blogger = username;
+    var blog_address = "http://blog.csdn.net/brillianteagle";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "ahpho1";  
+
+    var fileName = '51623208';
+    var commentscount = 13;
+    var islock = false
+
+   window.quickReplyflag = true;
+            
+             var isBole = false;
+            
+
+</script>
+
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+    <script type="text/javascript" src="http://c.csdnimg.cn/pubfooter/js/tracking.js" charset="utf-8"></script> 
+   <!-- <script type="text/javascript">
+        var protocol = window.location.protocol;
+        document.write('<script type="text/javascript" src="' + protocol + '//csdnimg.cn/pubfooter/js/repoAddr2.js?v=' + Math.random() + '"></' + 'script>');
+    </script>-->
+     <link rel="shortcut icon" href="http://c.csdnimg.cn/public/favicon.ico" />    
+     <link type="text/css" rel="stylesheet" href="http://static.blog.csdn.net/scripts/SyntaxHighlighter/styles/default.css" />
+
+
+    <script src="http://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+     <!-- ad begin -->
+         <script language="javascript" type="text/javascript" src="http://ads.csdn.net/js/tracking.js"></script>
+    <!-- ad end-->
+
+      <script src="//csdnimg.cn/rabbit/tracking-ad/main.js"></script>
+
+    <link rel="stylesheet" href="http://static.csdn.net/public/common/toolbar/css/index.css">
+    <link rel="stylesheet" href="http://csdnimg.cn/public/common/libs/bootstrap/css/bootstrap.css">
+ 	<link rel="stylesheet" href="http://csdnimg.cn/public/static/css/avatar.css">
+    <link rel="stylesheet" href="http://static.blog.csdn.net/skin/skin2-template/css/common.css">
+    <!-- [if IE 7]-->
+    <link rel="stylesheet" href="http://static.blog.csdn.net/skin/skin2-template/css/font-awesome.min.css">
+    <!-- [endif]-->
+    <link rel="stylesheet" href="http://static.blog.csdn.net/skin/skin2-template/css/main.css">
+    
+     <link rel="stylesheet" href="http://static.blog.csdn.net/skin/skin2-template/css/jquery.rollbar.css">
+    <link rel="stylesheet" href="http://static.blog.csdn.net/skin/skin2-template/css/style.css">
+    
+    
+    <!-- [if lt IE 9]-->
+    <script src="http://static.blog.csdn.net/skin/skin2-template/js/libs/html5shiv.min.js"></script>
+    <!-- [endif]-->
+	<script src="http://static.blog.csdn.net/scripts/skintemplatecommon.js" type="text/javascript"></script>
+
+    <script src="http://static.blog.csdn.net/scripts/skintemplateprovider.js" type="text/javascript"></script>      
+	<script src="http://static.blog.csdn.net/scripts/skintemplatecomment.js" type="text/javascript"></script>
+
+    <script src="http://c.csdnimg.cn/rabbit/cnick/cnick.js" type="text/javascript"></script>      
+   
+       
+    
+
+      <script type="text/javascript">
+          $(function () {
+              setTimeout(function () {
+                  $(".mess_name").each(function (index, item) {
+                      var u = $(this).text().split('：')[0].toString().replace("回复", "")
+                      var thisComment = $(this);
+                      if (u) {
+                          $.getJSON("https://passport.csdn.net/get/nick?callback=?", { users: u }, function (a) {
+                              if (a != null && a.data != null && a.data.length > 0) {
+                                  nick = a.data[0].n;
+                                  if (u != nick) {
+                                      thisComment.text(thisComment.text().replace(u, nick));
+                                  }
+                              }
+                          });
+                      }
+                  });
+
+                  $(".username").each(function (index, item) {
+                      var u = $(this).text().split('：')[0].toString().replace("回复", "")
+                      var thisComment = $(this);
+                      if (u) {
+                          $.getJSON("https://passport.csdn.net/get/nick?callback=?", { users: u }, function (a) {
+                              if (a != null && a.data != null && a.data.length > 0) {
+                                  nick = a.data[0].n;
+                                  if (u != nick) {
+                                      thisComment.text(thisComment.text().replace(u, nick));
+                                  }
+                              }
+                          });
+                      }
+                  });
+
+              }, 200);
+
+          });
+      </script>
+
+    <title>【计算机图形学】OpenGL+VS2015相关类库配置 - 博客频道 - CSDN.NET</title>	
+  </head>
+  <body>
+
+       <!-- 广告位开始 -->
+        <ins data-revive-zoneid="149" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+    <!-- 广告位结束 -->
+
+   <script id="toolbar-tpl-scriptId" fixed="true" prod="blog" skin="black" src="http://c.csdnimg.cn/public/common/toolbar/js/html.js" type="text/javascript"></script>
+    <div class="blog_left">
+      <div class="blog_l_c">
+        <h2 class="blog_l_t">BrilliantEagle的专栏</h2>
+        <h6 class="blog_l_sign"></h6>
+        <div class="item_wrap">
+          <dl class="item_l">
+            <dt class="item">109</dt>
+            <dd class="item_name">原创</dd>
+          </dl>
+          <dl class="item_l">
+            <dt class="item">1</dt>
+            <dd class="item_name">转载</dd>
+          </dl>
+          <dl class="item_l">
+            <dt class="item">2</dt>
+            <dd class="item_name">译文</dd>
+          </dl>
+          <dl class="item_l">
+            <dt class="item">44</dt>
+            <dd class="item_name">评论</dd>
+          </dl>
+          <dl class="item_l">
+            <dt class="item">61635</dt>
+            <dd class="item_name">访问</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="blog_copyright">
+        <p><span>京 ICP 证 070598 号</span><img src="http://static.blog.csdn.net/skin/skin2-template/images/copyright.png" alt="img"></p>
+        <p>
+          Copyright © 1999-2016,
+          <br/>
+          CSDN.NET, All Rights Reserved
+        </p>
+       </div>
+    </div>
+    <div id="skin_m" class="skin_m">
+      <div id="skin_center" class="skin_center">
+          <div class="skin_center_t">
+                <h2 class="mod_most"></h2>
+                <!--include ../modules/mod_list.jade-->
+                <div class="skin_list">
+                  <dl class="list_c clearfix detail_list">
+                    <dt>
+                      <div class="date">
+                        <div class="date_t"><span>2016</span><em>六月</em></div>
+                        <div class="date_b">09</div>
+                      </div>
+                    </dt>
+                    <dd>
+                      <div class="skin_icon"><a href="javascript:;" class="set_top">置</a><a href="javascript:;" class="set_old">原</a></div>
+                      <h3 class="list_c_t"><a href="/BrilliantEagle/article/details/51623208">【计算机图形学】OpenGL+VS2015相关类库配置</a></h3>  
+                        <div class="list_c_Title">
+                          <p class="detail_p">
+                            <label><span>分类：</span><em onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">计算机图形学</em></label>
+                         </p>
+                         <p class="read_r">
+                            <label><i class="fa fa-eye" style="cursor:default"></i><span style="cursor:default"> （3631）</span></label>
+                            <label><i class="fa fa-comment-o"style="cursor:default"></i><span  style="cursor:default"> （13）</span></label>
+                             
+                             
+                            <label><i class="fa fa-exclamation-triangle"></i><span onclick="javascript:report(51623208,2);return false;"> 举报</span></label>
+                            <label><i class="fa fa-bookmark-o"></i><span onclick="javascript:collectArticle('【计算机图形学】OpenGL+VS2015相关类库配置','51623208');return false;"> 收藏</span></label>
+                             
+
+                             
+                          </p>
+                        </div>
+                      <div class="skin_detail" id="article_content">
+                        <div class="markdown_views"><h1 id="1-wiki">1 WiKi</h1>
+
+<p>OpenGL一直是事实上的计算机图形学标准，截止2016年06月，OpenGL版本已经更新到4.5。不过DirectX发展迅速，大有OpenGL落后的态势，知乎上的该话题的讨论：<a href="https://www.zhihu.com/question/23241456">https://www.zhihu.com/question/23241456</a>。所以OpenGL为了追赶DirectX，推出 了glNext(Vulkan API)，相关讨论<a href="https://www.zhihu.com/question/28039310">https://www.zhihu.com/question/28039310</a>。</p>
+
+
+
+<h1 id="2-相关资料">2 相关资料</h1>
+
+<p>图形学的经典书籍是《Computer Graphics with OpenGL》，即《计算机图形学》，以OpenGL描述，在介绍图形学基础理论的同时，也提供了OpengGL的相关API和实例程序。目前（2016年6月）本书已经更新到第4版。网上第3版的PDF文档比较多，尚未发现第4版的PDF文档，不过第3版和第4版差别很小，第4版重要的更新是提供了GLSL的一个章节。 <br>
+《计算机图形学》的重要性在于全面的理论知识，不过它基本不涉及Shader编程，仍然沿用固定管程的教学内容，然而当前的OpengGL都是Shader编程，读完本书你会发现对Shader了解很少。 <br>
+ 下面三本书都是Shader编程。 <br>
+《OpenGL超级宝典》和《OpenGL编程指南》是两本实用的OpengGL学习书籍，区别在于前者有更多实例，更容易按步骤进行操作，而后者着重介绍API，最好先阅读前者。 <br>
+《OpenGL 4.0 Shading Language Cookbook.pdf》主要介绍Shader编程。 <br>
+《OpenGL 4.0 Shading Language Cookbook.pdf》下载地址：<a href="http://download.csdn.net/detail/brillianteagle/9541959">http://download.csdn.net/detail/brillianteagle/9541959</a></p>
+
+
+
+<h1 id="3-相关库文件">3 相关库文件</h1>
+
+
+
+<h2 id="31-glglu和glut">3.1 gl、glu和glut</h2>
+
+<p>《计算机图形学》详细介绍了3个类库，总结起来就是 <br>
+glu库：函数glu开头，设置视景和投影矩阵、用线和多边形近似法来描述对象、用线性近似法描述quadric和B-spline，处理表面绘制操作。 <br>
+glut库：跨平台套件，包括了窗口操作、输入管理。 <br>
+注意，包括GLUT头文件就不必包括GL和GLU头文件。 <br>
+配置好这三个库就可以运行《计算机图形学》中所有的实例，但是不能进行Shader编程。</p>
+
+<h2 id="32-glew和freeglut">3.2 glew和freeglut</h2>
+
+<p>GLU库获得是比较陈旧的OpenGL API版本，可以从glew获得最新的OpenGL API版本。freeglut则是用来取代glut库的。 <br>
+所以，配置好glew和freeglut两个库，完全取代glu和glut库，同时可以获得最新版本的API，可以进行Shader编程。</p>
+
+
+
+<h2 id="33-gltools">3.3 GLTools</h2>
+
+<p>GLTools是《OpenGL超级宝典》作者提供的工具包，在运行本书的实例时要用到。</p>
+
+
+
+<h2 id="34-glm">3.4 GLM</h2>
+
+<p>GLM (OpenGL Mathematics) 也是一个工具包，在运行《OpenGL 4.0 Shading Language Cookbook.pdf》的程序时会用到。</p>
+
+
+
+<h1 id="4-库文件配置">4 库文件配置</h1>
+
+<p>一般配置都有两种方式，要么相关文件放到VC目录下，这样不必每次都配置；要么相关文件放到工程目录下，并包含头文件目录和lib文件目录，这样程序在在其他电脑上也可以打开。各有好处。这里介绍第二种方式。</p>
+
+
+
+<h2 id="41-glew和freeglut配置">4.1 glew和freeglut配置</h2>
+
+<p>glew官网：<a href="http://glew.sourceforge.net/">http://glew.sourceforge.net/</a> <br>
+glew官方GitHub主页：<a href="https://github.com/nigels-com/glew">https://github.com/nigels-com/glew</a> <br>
+freeglut官网：<a href="https://sourceforge.net/projects/freeglut/">https://sourceforge.net/projects/freeglut/</a> <br>
+下载glew的最新Binaries版本（截止2016年6月9日的）为glew-1.13.0-win32.zip，freeglut最新版本为3.0版本freeglut-MSVC-3.0.0-2.mp.zip。 <br>
+在VS2015中新建VC控制台程序OpenGL-Demo，在【工程目录】下新建GL文件夹和lib文件夹，然后执行下面四个步骤： <br>
+（1） 将glew-1.13.0-win32\glew-1.13.0\include\GL目录下的头文件和freeglut-MSVC-3.0.0-2.mp\freeglut\include\GL目录下的头文件都放到【工程目录】下新建GL文件夹中； <br>
+（2） 将glew-1.13.0-win32\glew-1.13.0\lib\Release\Win32目录下的glew32.lib文件和freeglut-MSVC-3.0.0-2.mp\freeglut\lib目录下的freeglut.lib放到【工程目录】下新建lib文件夹中，这里要注意，我使用的是32位版本的lib包，即便我的电脑是64位的。因为我们建立的VC工程默认是32位的。 <br>
+（3） 将glew-1.13.0-win32\glew-1.13.0\bin\Release\Win32目录下的glew32.dll和freeglut-MSVC-3.0.0-2.mp\freeglut\bin目录下的freeglut.dll放到工程目录下。 <br>
+（4） 在项目上右键菜单中打开配置，设置附加头文件目录和附加lib文件目录，如图。注意，$(ProjectDir)就是当前目录的意思。 <br>
+<img src="http://img.blog.csdn.net/20160609233257118" alt="这里写图片描述" title=""> <br>
+<img src="http://img.blog.csdn.net/20160609233334400" alt="这里写图片描述" title=""> <br>
+可以用以下代码测试一下，绘制一个白色背景的窗口：</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs java"><span class="hljs-comment">// OpenGL-Demo.cpp : Defines the entry point for the console application.</span>
+<span class="hljs-comment">//</span>
+#pragma comment(lib,<span class="hljs-string">"glew32.lib"</span>)
+#include &lt;glew.h&gt;
+#include &lt;freeglut.h&gt;
+#include &lt;iostream&gt;
+using namespace std;
+<span class="hljs-comment">/* GLUT callback Handlers */</span>
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> resize(GLint width, GLint height) {
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluOrtho2D(<span class="hljs-number">0.0</span>, (GLdouble)width, <span class="hljs-number">0.0</span>, (GLdouble)height);
+    glClear(GL_COLOR_BUFFER_BIT);
+}
+<span class="hljs-javadoc">/**绘制 函数，这里是空的*/</span>
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> display() {
+}
+<span class="hljs-javadoc">/**更换屏幕颜色设定矩阵模式
+选择正摄投影的范围*/</span>
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> init() {
+    glClearColor(<span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span>);
+    glMatrixMode(GL_PROJECTION);
+    gluOrtho2D(<span class="hljs-number">0.0</span>, <span class="hljs-number">200.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">150.0</span>);<span class="hljs-comment">//窗口的左下角是原点</span>
+}
+<span class="hljs-comment">/* Program entry point */</span>
+
+<span class="hljs-keyword">int</span> main(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> *argv[]) {
+    glutInit(&amp;argc, argv);
+    glutInitWindowSize(<span class="hljs-number">640</span>, <span class="hljs-number">480</span>);
+    glutInitWindowPosition(<span class="hljs-number">100</span>, <span class="hljs-number">100</span>);<span class="hljs-comment">//相对屏幕的左上角</span>
+    glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);<span class="hljs-comment">//正在使用单个帧缓存，颜色模式//为RGB,这是默认的颜色模式</span>
+    glutCreateWindow(<span class="hljs-string">"Draw Curves"</span>);
+    init();
+    <span class="hljs-keyword">if</span> (glewInit() == GLEW_OK) {
+        cout &lt;&lt; <span class="hljs-string">"glew初始化成功！"</span> &lt;&lt; endl;
+    }
+    glutDisplayFunc(display);
+    glutReshapeFunc(resize);
+    glutMainLoop();
+}
+</code></pre>
+
+
+
+<h2 id="42-gltools生成">4.2 GLTools生成</h2>
+
+<p>这个库由《OpenGL超级宝典》的作者提供，但是需要自己进行编译使用。这里我将本书源码进行了上传。 <br>
+part1下载地址：<a href="http://download.csdn.net/detail/brillianteagle/9545333">http://download.csdn.net/detail/brillianteagle/9545333</a> <br>
+part2下载地址：<a href="http://download.csdn.net/detail/brillianteagle/9545335">http://download.csdn.net/detail/brillianteagle/9545335</a> <br>
+只有两个都下载后才能解压。解压后SB5\Src目录下就有GLTools文件夹。该文件夹的目录下有include和src两个文件夹。由于GLTools的编译依赖于glew，可以看到SB5\Src\GLTools\include\GL目录下就是某个版本的glew头文件，而SB5\Src\GLTools\src目录下有glew.c源文件。 <br>
+由于我们已经采用了glew的1.13版本，所以这里要替换SB5\Src\GLTools\include\GL目录下的所有头文件，并采用1.13版本glew.c源文件。在glew的官网<a href="http://glew.sourceforge.net/">http://glew.sourceforge.net/</a>下载Source版本，替换SB5\Src\GLTools\src目录下有glew.c源文件。 <br>
+在VS2015中新建VC静态库程序GLTools，然后按下面步骤配置工程： <br>
+（1）将 SB5\Src\GLTools的include文件夹放到【工程目录】下，将SB5\Src\GLTools\src目录下的源文件放到【工程目录】下； <br>
+（2）将SB5\Src\GLTools\src目录下的所有源文件放到【工程目录】下； <br>
+（3）在工程上点击右键菜单中的属性，添加头文件。 <br>
+<img src="http://img.blog.csdn.net/20160609233458121" alt="这里写图片描述" title=""> <br>
+然后，就可以在relseas模式下编译该工程，结束后GLTools\Release目录下生成GLTools.lib。</p>
+
+
+
+<h2 id="43-gltools配置">4.3 GLTools配置</h2>
+
+<p>如何把GLTools集成到自己的工程呢？ <br>
+在之前的OpenGL-Demo【项目目录】下新建GLTools文件夹。 <br>
+（1） 将更新过glew最新版本的SB5\Src\GLTools的include文件夹下的所有文件拷贝到GLTools文件夹，并删除【项目目录】的GL文件夹，因为此时GL文件夹已经存在于GLTools目录下。 <br>
+（2） 将GLTools.lib添加到lib文件夹。 <br>
+（3） 更改附加头文件目录<span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-1-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-1" style="width: 10.083em; display: inline-block;"><span style="display: inline-block; position: relative; width: 8.056em; height: 0px; font-size: 125%;"><span style="position: absolute; clip: rect(1.763em 1000em 3.149em -0.371em); top: -2.717em; left: 0.003em;"><span class="mrow" id="MathJax-Span-2"><span class="mo" id="MathJax-Span-3" style="font-family: MathJax_Main;">(</span><span class="mi" id="MathJax-Span-4" style="font-family: MathJax_Math-italic;">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em;"></span></span><span class="mi" id="MathJax-Span-5" style="font-family: MathJax_Math-italic;">r</span><span class="mi" id="MathJax-Span-6" style="font-family: MathJax_Math-italic;">o</span><span class="mi" id="MathJax-Span-7" style="font-family: MathJax_Math-italic;">j</span><span class="mi" id="MathJax-Span-8" style="font-family: MathJax_Math-italic;">e</span><span class="mi" id="MathJax-Span-9" style="font-family: MathJax_Math-italic;">c</span><span class="mi" id="MathJax-Span-10" style="font-family: MathJax_Math-italic;">t</span><span class="mi" id="MathJax-Span-11" style="font-family: MathJax_Math-italic;">D</span><span class="mi" id="MathJax-Span-12" style="font-family: MathJax_Math-italic;">i</span><span class="mi" id="MathJax-Span-13" style="font-family: MathJax_Math-italic;">r</span><span class="mo" id="MathJax-Span-14" style="font-family: MathJax_Main;">)</span><span class="mi" id="MathJax-Span-15" style="font-family: MathJax_Math-italic;">G</span><span class="mi" id="MathJax-Span-16" style="font-family: MathJax_Math-italic;">L</span><span class="texatom" id="MathJax-Span-17"><span class="mrow" id="MathJax-Span-18"><span class="mo" id="MathJax-Span-19"><span style="font-family: STIXGeneral, 'Arial Unicode MS', serif; font-size: 80%; font-style: normal; font-weight: normal;">到</span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.723em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.47em; vertical-align: -0.397em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-1">(ProjectDir)GL到</script>(ProjectDir) GLTools <br>
+值得注意的是，GLTools依赖于glew，所有，在添加GLTools到自己的工程时要注意依赖关系。这样，引入GLTools，也就引入了glew。 <br>
+测试一下《OpengGL超级宝典（第5版）》的第一个例子，蓝色背景下绘制红色三角形。</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs cs"><span class="hljs-comment">// OpenGL-Demo.cpp : Defines the entry point for the console application.</span>
+<span class="hljs-comment">// Created by 曹艳丰</span>
+<span class="hljs-comment">//2016-06-09</span>
+<span class="hljs-comment">//#pragma comment(lib,"glew32.lib")//不用</span>
+
+<span class="hljs-preprocessor">#<span class="hljs-keyword">pragma</span> comment(lib,"GLTools.lib")</span>
+
+<span class="hljs-comment">//#include &lt;glew.h&gt;//不用</span>
+<span class="hljs-preprocessor">#include &lt;GLTools.h&gt;</span>
+<span class="hljs-preprocessor">#include &lt;GLShaderManager.h&gt;</span>
+<span class="hljs-preprocessor">#include &lt;GL\freeglut.h&gt;</span>
+GLBatch triangleBatch;
+GLShaderManager shaderManager;
+<span class="hljs-comment"><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span>/  </span>
+<span class="hljs-comment">// Window has changed size, or has just been created. In either case, we need  </span>
+<span class="hljs-comment">// to use the window dimensions to set the viewport and the projection matrix.  </span>
+<span class="hljs-keyword">void</span> ChangeSize(<span class="hljs-keyword">int</span> w, <span class="hljs-keyword">int</span> h)
+{
+    glViewport(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, w, h);
+}
+
+
+<span class="hljs-comment"><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span>/  </span>
+<span class="hljs-comment">// This function does any needed initialization on the rendering context.   </span>
+<span class="hljs-comment">// This is the first opportunity to do any OpenGL related tasks.  </span>
+<span class="hljs-keyword">void</span> SetupRC()
+{
+    <span class="hljs-comment">// Blue background  </span>
+    glClearColor(<span class="hljs-number">0.0</span>f, <span class="hljs-number">0.0</span>f, <span class="hljs-number">1.0</span>f, <span class="hljs-number">1.0</span>f);
+
+    shaderManager.InitializeStockShaders();
+
+    <span class="hljs-comment">// Load up a triangle  </span>
+    GLfloat vVerts[] = { -<span class="hljs-number">0.5</span>f, <span class="hljs-number">0.0</span>f, <span class="hljs-number">0.0</span>f,
+        <span class="hljs-number">0.5</span>f, <span class="hljs-number">0.0</span>f, <span class="hljs-number">0.0</span>f,
+        <span class="hljs-number">0.0</span>f, <span class="hljs-number">0.5</span>f, <span class="hljs-number">0.0</span>f };
+
+    triangleBatch.Begin(GL_TRIANGLES, <span class="hljs-number">3</span>);
+    triangleBatch.CopyVertexData3f(vVerts);
+    triangleBatch.End();
+}
+
+
+
+<span class="hljs-comment"><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span>/  </span>
+<span class="hljs-comment">// Called to draw scene  </span>
+<span class="hljs-keyword">void</span> RenderScene(<span class="hljs-keyword">void</span>)
+{
+    <span class="hljs-comment">// Clear the window with current clearing color  </span>
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+
+    GLfloat vRed[] = { <span class="hljs-number">1.0</span>f, <span class="hljs-number">0.0</span>f, <span class="hljs-number">0.0</span>f, <span class="hljs-number">1.0</span>f };
+    shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vRed);
+    triangleBatch.Draw();
+
+    <span class="hljs-comment">// Perform the buffer swap to display back buffer  </span>
+    glutSwapBuffers();
+}
+
+
+<span class="hljs-comment"><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span><span class="hljs-xmlDocTag">///</span>/  </span>
+<span class="hljs-comment">// Main entry point for GLUT based programs  </span>
+<span class="hljs-keyword">int</span> main(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span>* argv[])
+{
+    gltSetWorkingDirectory(argv[<span class="hljs-number">0</span>]);
+
+    glutInit(&amp;argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH | GLUT_STENCIL);
+    glutInitWindowSize(<span class="hljs-number">800</span>, <span class="hljs-number">600</span>);
+    glutCreateWindow(<span class="hljs-string">"Triangle"</span>);
+    glutReshapeFunc(ChangeSize);
+    glutDisplayFunc(RenderScene);
+
+    GLenum err = glewInit();
+    <span class="hljs-keyword">if</span> (GLEW_OK != err) {
+        fprintf(stderr, <span class="hljs-string">"GLEW Error: %s\n"</span>, glewGetErrorString(err));
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+
+    SetupRC();
+
+    glutMainLoop();
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+
+
+
+<h2 id="44-glm配置">4.4 GLM配置</h2>
+
+<p>GLM只有头文件，只需要在官网下载后解压，glm-master\glm-master目录下的glm放到OpenGL-Demo【工程目录】下，并添加$(ProjectDir)glm即可。 <br>
+glm官网：<a href="https://sourceforge.net/projects/ogl-math/">https://sourceforge.net/projects/ogl-math/</a> <br>
+下面是《OpenGL 4.0 Shading Language Cookbook.pdf》中第一个例子，也是绘制三角形。</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs cpp"><span class="hljs-preprocessor">#pragma comment(lib,"glew32.lib")<span class="hljs-comment">//这里要加载该静态包</span></span>
+<span class="hljs-preprocessor">#include &lt;GL/glew.h&gt;</span>
+<span class="hljs-preprocessor">#include &lt;GL/glut.h&gt;</span>
+<span class="hljs-preprocessor">#include &lt;glm\glm.hpp&gt;<span class="hljs-comment">//斜杠和反斜杠都可以</span></span>
+<span class="hljs-preprocessor">#include &lt;iostream&gt;</span>
+
+<span class="hljs-comment">/*
+完整的shader过程。
+初始化→编译→链接到程序
+*/</span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-comment">/*传入shader的引用，和GLSL字符串，对shader进行编译*/</span>
+<span class="hljs-keyword">void</span> compileShader(GLint&amp; shader, <span class="hljs-keyword">const</span> GLchar* shaderCode) {
+    <span class="hljs-keyword">const</span> GLchar* codeArray[] = { shaderCode };
+    glShaderSource(shader, <span class="hljs-number">1</span>, codeArray, NULL);
+    glCompileShader(shader);<span class="hljs-comment">//编译shader</span>
+
+                            <span class="hljs-comment">/*判断编译后的结果*/</span>
+    GLint result;
+    glGetShaderiv(shader, GL_COMPILE_STATUS, &amp;result);
+
+    <span class="hljs-keyword">if</span> (result == GL_FALSE) {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"shader编译错误！"</span> &lt;&lt; endl;
+        GLint logLen;
+        glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &amp;logLen);
+
+        <span class="hljs-keyword">if</span> (logLen&gt;<span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">char</span>* <span class="hljs-built_in">log</span> = (<span class="hljs-keyword">char</span>*)<span class="hljs-built_in">malloc</span>(logLen);
+            GLsizei written;
+            glGetShaderInfoLog(shader, logLen, &amp;written, <span class="hljs-built_in">log</span>);
+            <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-built_in">log</span> &lt;&lt; endl;
+            <span class="hljs-built_in">free</span>(<span class="hljs-built_in">log</span>);
+
+        }
+        <span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+    }
+    <span class="hljs-keyword">else</span>
+    {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"shader编译成功！"</span> &lt;&lt; endl;
+    }
+}
+<span class="hljs-keyword">void</span> render(GLuint programHandle) {
+    <span class="hljs-keyword">float</span> positionData[] = {
+        -<span class="hljs-number">0.8f</span>, -<span class="hljs-number">0.8f</span>, <span class="hljs-number">0.0f</span>,
+        <span class="hljs-number">0.8f</span>, -<span class="hljs-number">0.8f</span>, <span class="hljs-number">0.0f</span>,
+        <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.8f</span>, <span class="hljs-number">0.0f</span>
+    };
+    <span class="hljs-keyword">float</span> colorData[] = {
+        <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>,
+        <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>,
+        <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>
+    };
+
+    GLuint vboHandle[<span class="hljs-number">2</span>];
+    glGenBuffers(<span class="hljs-number">2</span>, vboHandle);
+    GLuint positionbufferHandle = vboHandle[<span class="hljs-number">0</span>];
+    GLuint colorBufferHandle = vboHandle[<span class="hljs-number">1</span>];
+    glBindBuffer(GL_ARRAY_BUFFER, positionbufferHandle);
+    glBufferData(GL_ARRAY_BUFFER, <span class="hljs-number">9</span> * <span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">float</span>), positionData, GL_STATIC_DRAW);<span class="hljs-comment">//绑定顶点数据</span>
+    glBindBuffer(GL_ARRAY_BUFFER, colorBufferHandle);
+    glBufferData(GL_ARRAY_BUFFER, <span class="hljs-number">9</span> * <span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">float</span>), colorData, GL_STATIC_DRAW);<span class="hljs-comment">//绑定颜色数据</span>
+
+    GLuint vaoHandle;
+    glGenVertexArrays(<span class="hljs-number">1</span>, &amp;vaoHandle);
+    glBindVertexArray(vaoHandle);
+    glEnableVertexAttribArray(<span class="hljs-number">0</span>);
+    glEnableVertexAttribArray(<span class="hljs-number">1</span>);
+    glBindBuffer(GL_ARRAY_BUFFER, positionbufferHandle);
+    glVertexAttribPointer(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, GL_FLOAT, GL_FALSE, <span class="hljs-number">0</span>, (GLubyte*)NULL);
+    glBindBuffer(GL_ARRAY_BUFFER, colorBufferHandle);
+    glVertexAttribPointer(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, GL_FLOAT, GL_FALSE, <span class="hljs-number">0</span>, (GLubyte*)NULL);
+    glBindVertexArray(vaoHandle);
+    <span class="hljs-comment">//  绘制三角形</span>
+    glDrawArrays(GL_TRIANGLES, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>);
+    glFlush();
+
+
+}
+<span class="hljs-keyword">void</span> link() {
+    <span class="hljs-comment">//判断glew是否能初始化</span>
+    <span class="hljs-keyword">if</span> (glewInit() != GLEW_OK) {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"glewInit()失败！"</span> &lt;&lt; endl;
+        <span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+    }
+    <span class="hljs-comment">/*编译vertexShader*/</span>
+    <span class="hljs-keyword">const</span> GLchar* shaderCode = <span class="hljs-string">"#version 400 \n in vec3 VertexPosition;in vec3 VertexColor;out vec3 Color;void main() {Color = VertexColor;gl_Position = vec4(VertexPosition, 1.0);}"</span>;
+    GLint vertexShader = glCreateShader(GL_VERTEX_SHADER);
+    <span class="hljs-keyword">if</span> (vertexShader == <span class="hljs-number">0</span>) {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"vertexShader无法获取！"</span> &lt;&lt; endl;
+        <span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+    }
+    compileShader(vertexShader, shaderCode);
+
+    <span class="hljs-comment">/*编译fragmentShader*/</span>
+    <span class="hljs-keyword">const</span> GLchar* fragmentCode = <span class="hljs-string">"#version 400 \n in vec3 Color;out vec4 FragColor;void main() {FragColor=vec4(Color,1.0);}"</span>;
+    GLint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+    <span class="hljs-keyword">if</span> (fragmentShader == <span class="hljs-number">0</span>) {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"fragmentShader无法获取！"</span> &lt;&lt; endl;
+        <span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+    }
+    compileShader(fragmentShader, fragmentCode);
+
+    <span class="hljs-comment">/*获得程序programHandle*/</span>
+    GLuint programHandle = glCreateProgram();
+    <span class="hljs-keyword">if</span> (programHandle == <span class="hljs-number">0</span>)
+    {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Program无法获取！"</span> &lt;&lt; endl;
+        <span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+
+    }
+    <span class="hljs-comment">/*将shader链接到programHandle*/</span>
+    glAttachShader(programHandle, vertexShader);
+    glAttachShader(programHandle, fragmentShader);
+    glBindAttribLocation(programHandle, <span class="hljs-number">0</span>, <span class="hljs-string">"VertexPosition"</span>);
+    glBindAttribLocation(programHandle, <span class="hljs-number">1</span>, <span class="hljs-string">"VertexColor"</span>);
+    glLinkProgram(programHandle);
+
+    <span class="hljs-comment">/*判断链接状态*/</span>
+    GLint status;
+    glGetProgramiv(programHandle, GL_LINK_STATUS, &amp;status);
+    <span class="hljs-keyword">if</span> (status == GL_FALSE)
+    {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"link失败！"</span> &lt;&lt; endl;
+        GLint logLen;
+        glGetProgramiv(programHandle, GL_INFO_LOG_LENGTH, &amp;logLen);
+
+        <span class="hljs-keyword">if</span> (logLen&gt;<span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">char</span>* <span class="hljs-built_in">log</span> = (<span class="hljs-keyword">char</span>*)<span class="hljs-built_in">malloc</span>(logLen);
+            GLsizei written;
+            glGetProgramInfoLog(programHandle, logLen, &amp;written, <span class="hljs-built_in">log</span>);
+            <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-built_in">log</span> &lt;&lt; endl;
+            <span class="hljs-built_in">free</span>(<span class="hljs-built_in">log</span>);
+
+        }
+        <span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+    }
+    <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"link成功！"</span> &lt;&lt; endl;
+        glUseProgram(programHandle);<span class="hljs-comment">//使用该程序</span>
+        render(programHandle);
+    }
+}
+
+<span class="hljs-keyword">int</span> main(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> *argv[])
+{
+    glutInit(&amp;argc, argv);;
+    glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+    glutInitWindowPosition(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    glutInitWindowSize(<span class="hljs-number">900</span>, <span class="hljs-number">600</span>);
+    glutCreateWindow(<span class="hljs-string">"First GLUT Sample"</span>);
+    <span class="hljs-comment">/*link函数是GLSL编写的主体*/</span>
+    glutDisplayFunc(link);
+    glutMainLoop();
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+</code></pre></div><link rel="stylesheet" href="http://static.blog.csdn.net/public/res-min/markdown_views.css?v=1.0" />
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="skin_nav">        
+                     <div class="skin_edit"><i class="fa fa-th-list"></i>
+                     <div class="nav_list nav_list_edit"><a href="/BrilliantEagle">文章列表</a></div>
+                  </div>
+                     
+                </div>
+                <div class="rssFix">
+        	        <a href="http://blog.csdn.net/BrilliantEagle/rss/list" class="column"  onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_RSS'])"><i class="fa fa-rss"></i></a>
+                </div>        
+
+                <div id="goTopBtn" class="skin_backTop"><i class="fa fa-chevron-up"></i></div>
+        </div>
+        <div class="detail_b">
+          <p class="reprint_copy" style="display:none" id="copyright">版权声明：本文为博主原创文章，未经博主允许不得转载。</p>  
+		   <!--      
+          <div class="bole" style="display:none">
+            <h2 class="bole_t clearfix"><span>伯乐推荐</span>
+              <label>一共有<em>{bolecount}</em>位博乐进行推荐</label>
+            </h2>
+           {bolecomment}              
+          </div>		
+          -->  
+           <!-- style="color:#dd3737"style="color:#dd3737"-->
+          <h2 class="praise" >
+            <label id="digg" ArticleId="51623208" onclick="btndigga();" ><span id="btnDigg">顶</span><em>1</em></label>
+            <label id="bury" onclick="btnburya();"><span id="btnBury"   >踩</span><em>0</em></label>
+          </h2>           
+                <div class="tracking-ad" data-mod="popu_222"><a href="javascript:void(0);" >&nbsp;</a>   </div>
+                <div class="tracking-ad" data-mod="popu_223"> <a href="javascript:void(0);" >&nbsp;</a></div>
+           
+             <script type="text/javascript">
+                 function btndigga() {
+                     $(".tracking-ad[data-mod='popu_222'] a").click();
+                 }
+                 function btnburya() {
+                     $(".tracking-ad[data-mod='popu_223'] a").click();
+                 }
+
+                 $(function () {
+                     if ($(".markdown_views").length > 0) {
+                         $('pre.prettyprint code').each(function () {
+                             var lines = $(this).text().split('\n').length;
+                             var $numbering = $('<ul/>').addClass('pre-numbering').hide();
+                             $(this).addClass('has-numbering').parent().append($numbering);
+                             for (i = 1; i <= lines; i++) {
+                                 $numbering.append($('<li/>').text(i));
+                             };
+                             $numbering.fadeIn(1700);
+                         });
+                     }
+                     else {
+                         $("#article_content pre").each(function () {
+                             var $this = $(this);
+                             if ($this.attr("class") != undefined) {
+                                 if ($this.attr("class").indexOf("brush:") != -1) {
+                                     var lang = $this.attr("class").split(';')[0].split(':')[1];
+                                     $this.attr('name', 'code');
+                                     $this.attr('class', lang);
+                                 }
+                                 if ($this.attr("class")) {
+                                     $this.attr('name', 'code');
+                                 }
+                             }
+                         });
+                         $('#article_content textarea[name=code]').each(function () {
+                             var $this = $(this);
+                             if ($this.attr("class").indexOf(":") != -1) {
+                                 $this.attr("class", $this.attr("class").split(':')[0]);
+                             }
+                         });
+                         dp.SyntaxHighlighter.HighlightAll('code');
+                         $('.highlighter').addClass('dp-highlighter');
+                         if (!window.clipboardData) {
+                             setTimeout("setCopyBtn()", 500);
+                         }
+
+                         function __get_code_toolbar(snippet_id) {
+                             return $("<span class='tracking-ad' data-mod='popu_167'><a href='https://code.csdn.net/snippets/"
+                                     + snippet_id
+                                     + "' target='_blank' title='在CODE上查看代码片'  style='text-indent:0;'><img src='https://code.csdn.net/assets/CODE_ico.png' width=12 height=12 alt='在CODE上查看代码片' style='position:relative;top:1px;left:2px;'/></a></span>"
+                                     + "<span class='tracking-ad' data-mod='popu_170'><a href='https://code.csdn.net/snippets/"
+                                     + snippet_id
+                                     + "/fork' target='_blank' title='派生到我的代码片' style='text-indent:0;'><img src='https://code.csdn.net/assets/ico_fork.svg' width=12 height=12 alt='派生到我的代码片' style='position:relative;top:2px;left:2px;'/></a></span>");
+                         }
+
+                         $("[code_snippet_id]").each(function () {
+                             __s_id = $(this).attr("code_snippet_id");
+                             if (__s_id != null && __s_id != "" && __s_id != 0 && parseInt(__s_id) > 70020) {
+                                 __code_tool = __get_code_toolbar(__s_id);
+                                 $(this).prev().find(".tools").append(__code_tool);
+                             }
+                         });
+
+                         $(".bar").show();
+                     }
+                 });
+            </script>
+          <div class="blog_share">
+              <!--<i class="fa fa-qq"></i><i class="fa fa-weixin"></i><i class="fa fa-weibo"></i><i class="fa fa-renren"></i><i class="fa fa-qq"></i><i class="fa fa-weixin"></i>
+              <i class="fa fa-weibo"></i><i class="fa fa-renren"></i>-->                
+               <div class="bdsharebuttonbox tracking-ad" style="float: right;" data-mod="popu_172">
+                <a href="#" class="bds_more" data-cmd="more" style="background-position:0 0 !important; background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png) !important"></a>
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"  style="background-position:0 -52px !important"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"style="background-position:0 -104px !important"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"style="background-position:0 -260px !important"></a>
+                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"style="background-position:0 -208px !important"></a>
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"style="background-position:0 -1612px !important" ></a>
+                </div>
+                <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                <!-- Baidu Button END -->
+          </div>
+          <div class="forward_back">
+            <div class="back fl"><a href="javascript:void(0);" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian']);location.href='/brillianteagle/article/details/51506157';"><span><i class="fa fa-arrow-left"></i></span><em>【WPF开发】无人机HUD (Head Up Display)开源控件</em></a></div><div class="forward fr"><a href="javascript:void(0);" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian']);location.href='/brillianteagle/article/details/51815888';"><em>【超级宝典（第5版）】第二章：第一个三角形</em><span><i class="fa fa-arrow-right"></i></span></a></div>
+          </div>
+            <div>
+                <!-- 广告位开始 -->
+<ins data-revive-zoneid="71" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+<!-- 广告位结束 -->
+            </div>            
+        <!--  
+		{articleinsamecategory}
+            -->
+          <div class="comment" id="comment_form">
+              <div id="commentsbmitarear">
+                    <h2 class="comment_t">发表评论</h2>
+                    <dl class="publish_comment clearfix" id="commentbox">
+                      <dt><a href="http://my.csdn.net/ahpho1"><img src="http://avatar.csdn.net/E/A/F/1_ahpho1.jpg"></a></dt>
+                      <dd>                 
+			          <form action="/BrilliantEagle/comment/submit?id=51623208" method="post" onsubmit="return subform(this);" id="commentform">
+					        <textarea class="publish_txt" id="comment_content"></textarea>
+					        <div class="publish clearfix">
+					
+					          <div class="publish_l"><i class="fa fa-code J_code"></i></div>
+
+					          <input type="hidden" id="comment_replyId" name="comment_replyId">
+					          <input type="hidden" id="comment_userId" name="comment_userId" value="">
+					          <input type="hidden" id="commentId" name="commentId" value="">
+					  
+					          <a href="javascript:void(0);" class="publish_btn"> 发表评论</a>&nbsp;&nbsp;<span id="tip_comment" style="color: Red; display: none;"></span>
+					
+					          <div class="comment-code-pop J_lang_list" id="lang_list" code="code"><a href="#html" style="width:95px;" class="long_name">HTML/XML</a><a href="#objc" style="width:95px;" class="long_name">objective-c</a><a href="#delphi" style="width:58px;" class="zhong_name">Delphi</a><a href="#ruby" class="zhong_name">Ruby</a><a href="#php">PHP</a><a href="#csharp" class="duan_name">C#</a><a style=" border-right: none;" href="#cpp" class="duan_name">C++</a><a style=" border-bottom:none;width:95px;" href="#javascript" class="long_name">JavaScript</a><a style=" border-bottom:none;width:95px;" href="#vb" class="long_name">Visual Basic</a><a style=" border-bottom:none;" href="#python" class="zhong_name">Python</a><a style=" border-bottom:none;" href="#java" class="zhong_name">Java</a><a style="border-bottom:none;" href="#css" class="duan_name">CSS</a><a style="border-bottom:none;" href="#sql" class="duan_name">SQL</a><a style="border:none; " href="#plain" class="duan_name">其它</a><span class="arrb"></span></div>
+					        </div>
+			         </form>
+                      </dd>
+                    </dl>
+               </div>
+              <a name="comments"></a>
+            <div class="comment_list" id="comment_list"></div>
+            <div  style="height:60px">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skin_right">
+      <div id="skin_r_wrap" class="skin_r_wrap">
+        <div id="skin_r" class="skin_r"><i id="arrow_r" class="fa fa-arrow-right"></i>
+          <div class="mess"><a href="http://my.csdn.net/BrilliantEagle"><img src="http://avatar.csdn.net/1/1/8/1_brillianteagle.jpg" alt="img" class="head"></a>
+            <p class="mess_name">BrilliantEagle</p>
+            <div class="grade">
+                <p  title="积分：1709"><span>等级：</span><img src="http://c.csdnimg.cn/jifen/images/xunzhang/jianzhang/blog4.png"></p>
+                <p><span>排名：</span><span>第17692名</span></p>
+            </div>
+            <div class="blog_medal"><a href="http://blog.csdn.net/experts/rule.html"></a>
+              <div class="medal_c"></div>
+              <div class="attention">
+			  <a href="javascript:void(0);" id="span_add_follow"><i class="fa fa-plus"></i><span>加关注</span></a>
+			  <a href="javascript:void(0);" onClick="window.open('http://msg.csdn.net/letters/model?receiver=BrilliantEagle','_blank','height=350,width=700');_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_sixin'])"><i class="fa fa-envelope-o"></i><span>发私信</span></a>			  			 
+			  </div>   
+			   <div class="contact"></div>         
+            </div>
+          </div>
+          <div class="classify">     
+             <!--
+            <dl class="classify_list js_list">
+	             <dt>
+	                  <div class="js_column"><i class="fa fa-th"></i><a href="#" class="column">文章分类</a></div>
+	            </dt>
+            </dl>
+
+                  <dl class="classify_list">
+              <dt><i class="fa fa-play-circle"></i><a  href="/BrilliantEagle/blog/course" class="column">我的课程</a></dt>
+            </dl> 
+		    -->	    	
+            
+            
+                
+               
+               <dl class="classify_list">
+                     <div class="article_search">
+                         <div class="article_search_c">
+                            <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+                                <input type="text" id="inputSearch" placeholder="文章搜索"><i class="fa fa-search" id="btnSubmit"></i>
+                            </form>
+                         </div>
+                     </div>
+               </dl>  
+                    
+            <dl class="classify_list">
+              <dt><i class="fa fa-file-text"></i><a  href="/BrilliantEagle/blog/column" class="column">博客专栏</a> </dt>
+            </dl>  
+                    
+           <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-th"></i><span class="column">文章分类</span></div>
+                <ul id="article_list0" class="article_list">
+				  <li><a href="/BrilliantEagle/article/category/6108046" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">无人机</a><span>（1）</span></li><li><a href="/BrilliantEagle/article/category/2436735" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">《算法导论》学习</a><span>（41）</span></li><li><a href="/BrilliantEagle/article/category/2467531" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">《编程珠玑》学习</a><span>（2）</span></li><li><a href="/BrilliantEagle/article/category/2468887" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">IT公司笔试题分析</a><span>（14）</span></li><li><a href="/BrilliantEagle/article/category/2480073" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">Android开发</a><span>（21）</span></li><li><a href="/BrilliantEagle/article/category/2492017" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">java</a><span>（18）</span></li><li><a href="/BrilliantEagle/article/category/2563033" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">leetcode在线编程记录</a><span>（13）</span></li><li><a href="/BrilliantEagle/article/category/6238631" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">WPF开发</a><span>（2）</span></li><li><a href="/BrilliantEagle/article/category/6265621" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">计算机图形学</a><span>（2）</span></li>                  
+                </ul>
+              </dt>
+              <dd style="display:none"><a href="#" class="article_add"><i class="fa fa-plus"></i></a></dd>
+            </dl>
+            
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-calendar"></i><span class="column">文章存档</span></div>
+                <ul id="article_list1" class="article_list">
+                 
+                    <li><a href="/BrilliantEagle/article/month/2016/09">2016年09月</a><span>(2)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2016/08">2016年08月</a><span>(6)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2016/07">2016年07月</a><span>(4)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2016/06">2016年06月</a><span>(1)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2016/05">2016年05月</a><span>(2)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2016/04">2016年04月</a><span>(1)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2016/03">2016年03月</a><span>(2)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2016/02">2016年02月</a><span>(2)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2016/01">2016年01月</a><span>(7)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2015/12">2015年12月</a><span>(2)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2015/11">2015年11月</a><span>(1)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2015/10">2015年10月</a><span>(2)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2015/09">2015年09月</a><span>(1)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2015/08">2015年08月</a><span>(1)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2014/11">2014年11月</a><span>(2)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2014/10">2014年10月</a><span>(5)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2014/09">2014年09月</a><span>(29)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2014/08">2014年08月</a><span>(41)</span></li>
+                
+                    <li><a href="/BrilliantEagle/article/month/2014/07">2014年07月</a><span>(2)</span></li>
+                
+                </ul>
+              </dt>
+            </dl>
+                 
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-eye"></i><span class="column">阅读排行</span></div>
+                <ul class="article_list">
+                
+                 <li><a href="/brillianteagle/article/details/51623208">【计算机图形学】OpenGL+VS2015相关类库配置</a><span>（3628）</span></li>
+                 
+                 <li><a href="/brillianteagle/article/details/50823346">【无人机开发】通讯协议MavLink详解</a><span>（2618）</span></li>
+                 
+                 <li><a href="/brillianteagle/article/details/50900975">【Android开发】greenrobot三大开源利器详解（一）——EventBus</a><span>（1627）</span></li>
+                 
+                 <li><a href="/brillianteagle/article/details/38854879">阿里巴巴集团2014秋季校园招聘笔试题</a><span>（1161）</span></li>
+                 
+                 <li><a href="/brillianteagle/article/details/38930273">阿里巴巴集团2015年秋季校招在线笔试附加题分析</a><span>（1155）</span></li>
+                 
+                 <li><a href="/brillianteagle/article/details/38515963">短信和会话界面的数据库实现（sms and threads）</a><span>（1130）</span></li>
+                 
+                 <li><a href="/brillianteagle/article/details/40614313">【一道航天信息java笔试题】return语句和finally语句的执行顺序</a><span>（950）</span></li>
+                 
+                 <li><a href="/brillianteagle/article/details/38927901">阿里巴巴集团2014年校园招聘北京笔试题分析</a><span>（937）</span></li>
+                 
+                 <li><a href="/brillianteagle/article/details/38922481">阿里巴巴2014校园招聘研发笔试一道JAVA附加题分析（update）</a><span>（929）</span></li>
+                 
+                 <li><a href="/brillianteagle/article/details/39008563">【算法导论学习-26】 二叉树专题4：红黑树、AVL树、B-Tree</a><span>（925）</span></li>
+                 
+                </ul>
+              </dt>
+            </dl>
+            
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-comments"></i><span class="column">评论排行</span></div>
+                <ul class="article_list">
+                  
+                  <li><a href="/brillianteagle/article/details/51623208">【计算机图形学】OpenGL+VS2015相关类库配置</a><span>（13）</span></li>
+                  
+                  <li><a href="/brillianteagle/article/details/39853081">数组中n个数出现次数超过1/(1+n)，求这些数</a><span>（4）</span></li>
+                  
+                  <li><a href="/brillianteagle/article/details/39294405">【LeetCode在线编程记录-1】字符串按单词反转</a><span>（3）</span></li>
+                  
+                  <li><a href="/brillianteagle/article/details/39294499">【LeetCode题目记录-2】从前序遍历和中序遍历构建二叉树</a><span>（2）</span></li>
+                  
+                  <li><a href="/brillianteagle/article/details/39295055">【LeetCode题目记录-8】从排序后的单链表中去除重复元素</a><span>（2）</span></li>
+                  
+                  <li><a href="/brillianteagle/article/details/39294639">【LeetCode题目记录-4】插入数组间隔问题</a><span>（2）</span></li>
+                  
+                  <li><a href="/brillianteagle/article/details/38899333">阿里巴巴2011届实习生招聘笔试题及分析</a><span>（2）</span></li>
+                  
+                  <li><a href="/brillianteagle/article/details/39294911">【LeetCode题目记录-7】为完全二叉树添加层指针</a><span>（2）</span></li>
+                  
+                  <li><a href="/brillianteagle/article/details/38323795">【算法导论学习-002】归并排序（MergeSort）</a><span>（2）</span></li>
+                  
+                  <li><a href="/brillianteagle/article/details/39294801">【LeetCode题目记录-6】1~n作为key可以有多少种二叉搜索树（BST）的形式</a><span>（2）</span></li>
+                  
+                </ul>
+              </dt>
+            </dl>
+                
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-list-ol"></i><span class="column">推荐文章</span></div>
+                <ul class="article_list">
+                 <ul>
+<li><a href="http://blog.csdn.net/turingbooks/article/details/52522830" target="_blank">* 程序员10月书讯，评论得书</a></li>
+<li><a href="http://blog.csdn.net/jiangwei0910410003/article/details/52836241" 
+target="_blank">* Android中Xposed框架篇---修改系统位置信息实现自身隐藏功能</a></li>
+<li><a href="http://blog.csdn.net/luoshengyang/article/details/52773402" 
+target="_blank">* Chromium插件（Plugin）模块（Module）加载过程分析</a></li>
+<li><a href="http://blog.csdn.net/hejjunlin/article/details/52966319" target="_blank">* Android TV开发总结--构建一个TV app的直播节目实例</a></li>
+<li><a href="http://blog.csdn.net/yinwenjie/article/details/52935140" 
+target="_blank">* 架构设计：系统存储--MySQL简单主从方案及暴露的问题</a></li>
+
+
+</ul>
+                </ul>
+              </dt>
+            </dl>
+                  
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-commenting"></i><span class="column">最新评论</span></div>
+                <ul class="article_list new_comment">
+                  
+                    <li>                    
+                    <p><a href="/brillianteagle/article/details/51623208">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/BrilliantEagle" class="reply_name">BrilliantEagle</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>@baidu_20844809: 我的博客里面：将glew-1.13.0-win32\glew-1....</i></p>                    
+                  </li>      
+                 
+                    <li>                    
+                    <p><a href="">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/qq_21238439" class="reply_name">qq_21238439</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>@BrilliantEagle:嗯，找到了。。。之前一直用qt的glwidget在学，我再试试配环境...</i></p>                    
+                  </li>      
+                 
+                    <li>                    
+                    <p><a href="">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/BrilliantEagle" class="reply_name">BrilliantEagle</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>@qq_21238439:src目录下是.c文件，include目录下是.h文件。这个两个目录有吧？</i></p>                    
+                  </li>      
+                 
+                    <li>                    
+                    <p><a href="">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/qq_21238439" class="reply_name">qq_21238439</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>@BrilliantEagle:可是博主，我在下载的官网的包里找不到glew.c和glew.h这两个...</i></p>                    
+                  </li>      
+                 
+                    <li>                    
+                    <p><a href="">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/BrilliantEagle" class="reply_name">BrilliantEagle</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>@qq_21238439:需要替换glew到最新版本，包括头文件和源文件~</i></p>                    
+                  </li>      
+                 
+                    <li>                    
+                    <p><a href="">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/BrilliantEagle" class="reply_name">BrilliantEagle</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>“在glew的官网http://glew.sourceforge.net/下载Source版本，替换...</i></p>                    
+                  </li>      
+                 
+                    <li>                    
+                    <p><a href="">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/BrilliantEagle" class="reply_name">BrilliantEagle</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>@wh521518:好的~客气啦，以后多多交流~</i></p>                    
+                  </li>      
+                 
+                    <li>                    
+                    <p><a href="">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/qq_21238439" class="reply_name">qq_21238439</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>@wh521518:前辈，问一下，你的glew版本怎么弄的？就是在gltools里面不是要更换gle...</i></p>                    
+                  </li>      
+                 
+                    <li>                    
+                    <p><a href="">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/qq_21238439" class="reply_name">qq_21238439</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>博主你好，问一下在sorce文件里面哪个是glew.c的文件啊？下载的git版本的源代码。</i></p>                    
+                  </li>      
+                 
+                    <li>                    
+                    <p><a href="">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/wh521518" class="reply_name">wh521518</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>@BrilliantEagle: 弄好了，谢谢博主，主要还是文件位置问题。</i></p>                    
+                  </li>      
+                           
+                </ul>
+              </dt>
+            </dl>
+                
+
+            <!--
+           [startblogcolumn]            
+             [startsearch]   
+               <dl class="classify_list">
+                     <div class="article_search">
+                         <div class="article_search_c">
+                            <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+                                <input type="text" id="inputSearch" placeholder="文章搜索"><i class="fa fa-search" id="btnSubmit"></i>
+                            </form>
+                         </div>
+                     </div>
+               </dl>  
+            [endsearch]   
+            
+            [startspecialcolumn]        
+            <dl class="classify_list">
+              <dt><i class="fa fa-file-text"></i><a  href="/BrilliantEagle/blog/column" class="column">博客专栏</a> </dt>
+            </dl>  
+            [endspecialcolumn]   
+            
+             [startcategory]        
+           <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-th"></i><span class="column">文章分类</span></div>
+                <ul id="article_list0" class="article_list">
+				  {articlecategorys}                  
+                </ul>
+              </dt>
+              <dd style="display:none"><a href="#" class="article_add"><i class="fa fa-plus"></i></a></dd>
+            </dl>
+            [endcategory]
+
+            [startarchive]
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-calendar"></i><span class="column">文章存档</span></div>
+                <ul id="article_list1" class="article_list">
+                 [startlist]
+                    <li><a href="/{0}/article/month/{1}/{2}">{1}年{2}月</a><span>({3})</span></li>
+                [endlist]
+                </ul>
+              </dt>
+            </dl>
+             [endarchive]    
+                [startviewcountarticles]    
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-eye"></i><span class="column">阅读排行</span></div>
+                <ul class="article_list">
+                [startlist]
+                 <li><a href="{columnarticleurl}">{columnarticletitle}</a><span>（{columnarticlecount}）</span></li>
+                 [endlist]
+                </ul>
+              </dt>
+            </dl>
+            [endviewcountarticles]
+                [startcommentcountarticles]
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-comments"></i><span class="column">评论排行</span></div>
+                <ul class="article_list">
+                  [startlist]
+                  <li><a href="{columnarticleurl}">{columnarticletitle}</a><span>（{columnarticlecommentcount}）</span></li>
+                  [endlist]
+                </ul>
+              </dt>
+            </dl>
+                [endcommentcountarticles]
+                [starthomepagearticles]
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-list-ol"></i><span class="column">推荐文章</span></div>
+                <ul class="article_list">
+                 {cloumcontent}
+                </ul>
+              </dt>
+            </dl>
+                  [endhomepagearticles]
+                [startnewcomments]
+            <dl class="classify_list js_list">
+              <dt>
+                <div class="js_column_wrap"><i class="fa fa-commenting"></i><span class="column">最新评论</span></div>
+                <ul class="article_list new_comment">
+                  [startlist]
+                    <li>                    
+                    <p><a href="{articleurl}">【计算机图形学】OpenGL+VS2015相关类库配置</a></p>                   
+                    <p><a href="/{commentusername}" class="reply_name">{commentusername}</a><span>回复：</span></p>
+                    <p class="reply_c"><em></em><i>{commentcontent}</i></p>                    
+                  </li>      
+                 [endlist]          
+                </ul>
+              </dt>
+            </dl>
+                [endnewcomments]
+                [startcustom]
+                   <dl class="classify_list js_list">
+                      <dt>
+                        <div class="js_column_wrap"><i class="fa fa-cube"></i><span class="column">{columntitle}</span></div>
+                        <ul class="article_list">
+                         {columcontent}
+                        </ul>
+                      </dt>
+                    </dl>
+                [endcustom]
+         [endblogcolumn]    
+            -->
+
+            <!--
+            <dl class="classify_list">
+              <dt class="rss"><i class="fa fa-rss"></i>			 
+			  <span class="column">
+			   	<a href="http://blog.csdn.net/BrilliantEagle/rss/list" class="column"  onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_RSS'])">RSS订阅</a>
+			   </span>
+			  </dt>
+            </dl>
+            -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skin_right_small" class="skin_right_small">
+      <div class="skin_r_small"><i id="faNavicon" class="fa fa-navicon"></i>
+        <div class="head_small"><a href="http://my.csdn.net/BrilliantEagle"><img src="http://avatar.csdn.net/1/1/8/1_brillianteagle.jpg" alt="img"></a></div>
+        <ul class="rSmallList">  
+           
+                
+                  <li class="small_article"><i class="fa fa-file-text"></i><a href="/BrilliantEagle/blog/column" class="small_column">博客专栏</a></li>
+                    
+                  <li class="small_article js_smallArticle"><i class="fa fa-th"></i><a href="#" class="small_column">文章分类</a></li>
+                
+                  <li class="small_article js_smallArticle"><i class="fa fa-calendar"></i><a href="#" class="small_column">文章存档</a></li>
+                
+                  <li class="small_article js_smallArticle"><i class="fa fa-eye"></i><a href="#" class="small_column">阅读排行</a></li>
+              
+                  <li class="small_article js_smallArticle"><i class="fa fa-comments"></i><a href="#" class="small_column">评论排行</a></li>
+              
+                  <li class="small_article js_smallArticle"><i class="fa fa-list-ol"></i><a href="#" class="small_column">推荐文章</a></li>
+              
+                  <li class="small_article js_smallArticle"><i class="fa fa-commenting"></i><a href="#" class="small_column">最新评论</a></li>
+                      
+          <!-- 
+           [startblogcolumnsmall]   
+               [startspecialcolumn]    
+                  <li class="small_article"><i class="fa fa-file-text"></i><a href="/BrilliantEagle/blog/column" class="small_column">博客专栏</a></li>
+               [endspecialcolumn]  
+                [startcategory]     
+                  <li class="small_article js_smallArticle"><i class="fa fa-th"></i><a href="#" class="small_column">文章分类</a></li>
+                [endcategory]     
+              [startarchive]
+                  <li class="small_article js_smallArticle"><i class="fa fa-calendar"></i><a href="#" class="small_column">文章存档</a></li>
+              [endarchive]
+              [startviewcountarticles]  
+                  <li class="small_article js_smallArticle"><i class="fa fa-eye"></i><a href="#" class="small_column">阅读排行</a></li>
+              [endviewcountarticles]  
+              [startcommentcountarticles]
+                  <li class="small_article js_smallArticle"><i class="fa fa-comments"></i><a href="#" class="small_column">评论排行</a></li>
+              [endcommentcountarticles]
+              [starthomepagearticles]
+                  <li class="small_article js_smallArticle"><i class="fa fa-list-ol"></i><a href="#" class="small_column">推荐文章</a></li>
+              [endhomepagearticles]
+              [startnewcomments]
+                  <li class="small_article js_smallArticle"><i class="fa fa-commenting"></i><a href="#" class="small_column">最新评论</a></li>
+              [endnewcomments]
+              [startcustom]
+                  <li class="small_article js_smallArticle"><i class="fa fa-cube"></i><a href="#" class="small_column">{columntitle}</a></li>
+              [endcustom]
+          [endblogcolumnsmall]    
+          -->         
+        </ul>        
+      </div>
+    </div>
+    <div id="mask"></div>
+    <script type="text/javascript" src="http://static.blog.csdn.net/skin/skin2-template/js/apps/accordion.js"></script>
+    
+    <script type="text/javascript" src="http://static.blog.csdn.net/skin/skin2-template/js/apps/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="http://static.blog.csdn.net/skin/skin2-template/js/apps/jquery.rollbar.min.js"></script>
+    
+    <script type="text/javascript" src="http://static.blog.csdn.net/skin/skin2-template/js/apps/transition.js"></script>  
+     <script id="noticeScript" type="text/javascript" charset="utf-8" btnId="header_notice_num" wrapId="note1" count="5" subCount="5" src="http://c.csdnimg.cn/public/common/toolbar/js/notify.js"></script>  
+    <!--script( type="text/javascript" src="http://csdnimg.cn/pubfooter/js/publib_footer.js" )-->
+    <!--script( type="text/javascript" src="http://static.csdn.net/public/common/toolbar/js/toolbar.js" )-->
+    <script id="csdn-toolbar-id" btnId="header_notice_num" wrapId="note1" count="5" subCount="5" type="text/javascript" src="http://c.csdnimg.cn/public/common/toolbar/js/toolbar.js"></script>
+
+     <div id="pop_win" style="display:none ;position: absolute; z-index: 10000; border: 1px solid rgb(220, 220, 220); top: 222.5px; left: 630px; opacity: 1; background: none 0px 0px repeat scroll rgb(255, 255, 255);">
+    
+    </div>
+    <div id="report_dialog">
+    </div>
+
+    <div id="popup_mask"></div>
+    <style  type="text/css">
+        #popup_mask
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 9999;
+            left: 0px;
+            top: 0px;
+            opacity: 0.3;
+            filter: alpha(opacity=30);
+            display: none;
+        }
+
+         .skin_list  dl dd div ol {  
+        margin-left:15px;
+            }  
+
+       .skin_list dl dd div ol li {  
+         display:list-item;list-style-type:decimal;margin-left:15px;
+            }       
+
+    </style>     
+      
+        <div id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+                    <script id="adJs52b5334"></script>
+                    <script>document.getElementById("adJs52b5334").src = "http://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</script>
+        </div> 
+
+       <!-- 广告位开始 -->
+        <ins data-revive-zoneid="72" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+    <!-- 广告位结束 -->
+
+   <link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_code.css" />
+            <script type="text/javascript" src="http://static.blog.csdn.net/scripts/saveToCode.js"></script>     
+	<script type="text/javascript" src="//csdnimg.cn/rabbit/tracking-ad/main.js?75eacd8></script>
+  </body>
+</html>
+ <script language="javascript" type="text/javascript" src="http://ads.csdn.net/js/async_new.js"></script>      
+
+<script  type="text/javascript">
+    $(function(){
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },500);
+    });
+</script>
+
